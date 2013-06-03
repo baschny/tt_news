@@ -39,10 +39,6 @@ $TYPO3_AJAX = true;
 require('conf.php');
 require($BACK_PATH.'init.php');
 
-require_once(PATH_typo3.'classes/class.typo3ajax.php');
-require_once(PATH_typo3.'sysext/lang/lang.php');
-
-
 $GLOBALS['LANG'] = t3lib_div::makeInstance('language');
 $GLOBALS['LANG']->init($GLOBALS['BE_USER']->uc['lang']);
 

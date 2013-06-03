@@ -81,16 +81,10 @@ require_once($BACK_PATH.'init.php');
 require_once($BACK_PATH.'template.php');
 
 $GLOBALS['LANG']->includeLLFile('EXT:tt_news/mod1/locallang.xml');
-require_once(PATH_t3lib.'class.t3lib_scbase.php');
 $GLOBALS['BE_USER']->modAccess($MCONF,1);	// This checks permissions and exits if the users has no permission for entry.
 	// DEFAULT initialization of a module [END]
 
 
-
-
-require_once(t3lib_extMgm::extPath('tt_news').'lib/class.tx_ttnews_div.php');
-require_once(t3lib_extMgm::extPath('tt_news').'lib/class.tx_ttnews_categorytree.php');
-require_once(t3lib_extMgm::extPath('tt_news').'lib/class.tx_ttnews_recordlist.php');
 
 
 /**
@@ -726,8 +720,6 @@ class tx_ttnews_module1 extends t3lib_SCbase {
 	 * @return	[type]		...
 	 */
 	function processAjaxRequestConstruct() {
-		require_once(PATH_typo3.'template.php');
-
 		global $SOBE;
 
 			// Create a new anonymous object:

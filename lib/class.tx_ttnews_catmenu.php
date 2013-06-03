@@ -34,8 +34,6 @@
  * @author Rupert Germann <rupi@gmx.li>
  */
 
-require_once(t3lib_extMgm::extPath('tt_news').'lib/class.tx_ttnews_categorytree.php');
-
 class tx_ttnews_catmenu {
 	var $titleLen = 60;
 	var $treeObj;

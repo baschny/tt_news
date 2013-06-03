@@ -52,8 +52,6 @@
  *
  */
 
-require_once(t3lib_extMgm::extPath('tt_news').'lib/class.tx_ttnews_div.php');;
-
 /**
  * Class being included by TCEmain using a hook
  *
